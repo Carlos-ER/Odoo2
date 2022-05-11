@@ -1,0 +1,5 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: Iniciar Odoo
+      shell: docker-compose -f /tmp/docker-compose.yml up -d 

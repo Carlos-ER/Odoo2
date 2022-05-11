@@ -1,0 +1,4 @@
+[cliente]
+cliente ansible_host=192.168.0.51 ansible_user=root
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
