@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Ping') {
       steps {
-        sh 'whoami'
+        sh 'ansible 192.168.0.51 -m ping'
       }
     }
 
