@@ -16,7 +16,7 @@ pipeline {
 
     stage('Donwload Odoo') {
       steps {
-        ansiblePlaybook(ansible-playbook: 'imagen.yml', colorized: true, becomeUser: 'all', inventory: 'hosts')
+        ansiblePlaybook(playbook: 'imagen.yml', colorized: true, becomeUser: 'all', inventory: 'hosts')
       }
     }
 
