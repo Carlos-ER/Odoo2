@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: 192.168.0.51
   become: yes
   tasks:
    - name: install Docker
