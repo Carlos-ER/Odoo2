@@ -9,7 +9,7 @@ pipeline {
 
     stage('Install Docker') {
       steps {
-        ansiblePlaybook(playbook: 'dependencies.yml', inventory: 'hosts', colorized: true, becomeUser: 'all')
+        ansible-Playbook(playbook: 'dependencies.yml', inventory: 'hosts', colorized: true, becomeUser: 'all')
         sh 'ansible all -i hosts -a "sudo systemctl enable docker"'
       }
     }
