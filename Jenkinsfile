@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Ping') {
       steps {
-        sh 'ansible all -m ping'
+        sh 'ansible 192.168.0.55 -m ping'
       }
     }
 
